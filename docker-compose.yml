@@ -1,0 +1,19 @@
+bof:
+  build: ./bof
+  volumes:
+    - ./bof/home:/home/bof:ro
+    - ./bof/xinetd:/etc/xinetd.d/xinetd:ro
+  ports:
+    - "10000:1337"
+  expose:
+    - "1337"
+
+bof2:
+  build: ./bof2
+  volumes:
+    - ./bof2/home:/home/bof2:ro
+    - ./bof2/xinetd:/etc/xinetd.d/xinetd:ro
+  ports:
+    - "10001:1337"
+  expose:
+    - "1337"
