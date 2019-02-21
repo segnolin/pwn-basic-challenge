@@ -24,6 +24,6 @@ ret2sc:
     - ./ret2sc/home:/home/ret2sc:ro
     - ./ret2sc/xinetd:/etc/xinetd.d/xinetd:ro
   ports:
-    - "10001:1337"
+    - "10002:1337"
   expose:
     - "1337"
