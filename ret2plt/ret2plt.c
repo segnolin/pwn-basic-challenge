@@ -11,7 +11,7 @@ int main()
   char buf[16];
   system("echo What is your name?");
   read(0, name, 0x10);
-  puts("Say something:");
-  read(0, buf, 0x20);
+  puts("Say something: ");
+  read(0, buf, 0x40);
   return 0;
 }
