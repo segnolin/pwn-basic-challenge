@@ -37,3 +37,13 @@ ret2plt:
     - "10003:1337"
   expose:
     - "1337"
+
+gothijack:
+  build: ./gothijack
+  volumes:
+    - ./gothijack/home:/home/gothijack:ro
+    - ./gothijack/xinetd:/etc/xinetd.d/xinetd:ro
+  ports:
+    - "10004:1337"
+  expose:
+    - "1337"

@@ -1,0 +1,15 @@
+service gothijack
+{
+        disable = no
+        type = UNLISTED
+        wait = no
+        server = /home/gothijack/run.sh
+        socket_type = stream
+        protocol = tcp
+        user = gothijack
+        port = 1337
+        flags = REUSE
+        per_source = 10
+        rlimit_cpu = 3
+        nice = 18
+}
