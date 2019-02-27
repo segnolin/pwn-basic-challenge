@@ -47,3 +47,13 @@ gothijack:
     - "10004:1337"
   expose:
     - "1337"
+
+rop:
+  build: ./rop
+  volumes:
+    - ./rop/home:/home/rop:ro
+    - ./rop/xinetd:/etc/xinetd.d/xinetd:ro
+  ports:
+    - "10005:1337"
+  expose:
+    - "1337"
