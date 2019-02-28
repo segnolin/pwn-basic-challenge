@@ -5,7 +5,7 @@
 int main()
 {
   char buf[16];
-  puts("This is your first bof challenge ;)");
+  puts("This is your first rop challenge ;)");
   fflush(stdout);
   read(0, buf, 0x90);
   return 0;
