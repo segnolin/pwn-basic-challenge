@@ -5,3 +5,4 @@ subsystem:
 	make -C ret2plt
 	make -C gothijack
 	make -C rop
+	make -C ret2libc
