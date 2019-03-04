@@ -1,4 +1,5 @@
 subsystem:
+	make -C pwntools
 	make -C bof
 	make -C bof2
 	make -C ret2sc

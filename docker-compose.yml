@@ -1,3 +1,13 @@
+pwntools:
+  build: ./pwntools
+  volumes:
+    - ./pwntools/home:/home/pwntools:ro
+    - ./pwntools/xinetd:/etc/xinetd.d/xinetd:ro
+  ports:
+    - "9999:1337"
+  expose:
+    - "1337"
+
 bof:
   build: ./bof
   volumes:
