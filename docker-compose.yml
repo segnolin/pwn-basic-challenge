@@ -38,23 +38,13 @@ ret2sc:
   expose:
     - "1337"
 
-ret2plt:
-  build: ./ret2plt
-  volumes:
-    - ./ret2plt/home:/home/ret2plt:ro
-    - ./ret2plt/xinetd:/etc/xinetd.d/xinetd:ro
-  ports:
-    - "10003:1337"
-  expose:
-    - "1337"
-
 gothijack:
   build: ./gothijack
   volumes:
     - ./gothijack/home:/home/gothijack:ro
     - ./gothijack/xinetd:/etc/xinetd.d/xinetd:ro
   ports:
-    - "10004:1337"
+    - "10003:1337"
   expose:
     - "1337"
 
@@ -63,6 +53,16 @@ rop:
   volumes:
     - ./rop/home:/home/rop:ro
     - ./rop/xinetd:/etc/xinetd.d/xinetd:ro
+  ports:
+    - "10004:1337"
+  expose:
+    - "1337"
+
+ret2plt:
+  build: ./ret2plt
+  volumes:
+    - ./ret2plt/home:/home/ret2plt:ro
+    - ./ret2plt/xinetd:/etc/xinetd.d/xinetd:ro
   ports:
     - "10005:1337"
   expose:
