@@ -77,3 +77,13 @@ ret2libc:
     - "10006:1337"
   expose:
     - "1337"
+
+sort:
+  build: ./sort
+  volumes:
+    - ./sort/home:/home/sort:ro
+    - ./sort/xinetd:/etc/xinetd.d/xinetd:ro
+  ports:
+    - "10007:1337"
+  expose:
+    - "1337"

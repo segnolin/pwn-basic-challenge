@@ -7,3 +7,4 @@ subsystem:
 	make -C gothijack
 	make -C rop
 	make -C ret2libc
+	make -C sort
