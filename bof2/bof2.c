@@ -7,7 +7,7 @@ void y0u_c4n7_533_m3()
 {
   int allow = 0;
   if (allow) {
-    execve("/bin/sh", (char *[]){0}, (char *[]){0});
+    execve("/bin/sh", 0, 0);
   }
   else {
     puts("Oh no~~~!");
